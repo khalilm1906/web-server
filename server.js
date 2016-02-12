@@ -7,7 +7,7 @@ var PORT = process.env.PORT || 3030;
 app.use(middleware.logger);
 
 app.get('/about', middleware.requireAuthentication, function (req, res) {
-  res.send('About Us!');
+  res.send('About Us!!!');
 });
 
 app.use(express.static(__dirname + '/public'));
